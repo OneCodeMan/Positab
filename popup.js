@@ -41,3 +41,11 @@ $.ajax({
     console.log('Error...');
   }
 });
+
+$('#default-tab-text').on('click', function() {
+  chrome.tabs.getCurrent(function(tab) {
+    chrome.tabs.update(tab.id, {
+      url: 'chrome-search://local-ntp/local-ntp.html?dev=false'
+    });
+  });
+});
