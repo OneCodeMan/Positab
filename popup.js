@@ -14,4 +14,16 @@ var randBg = colors[Math.floor(Math.random() * (colors.length - 1))];
 
 $containerFluid.css('background-color', randBg);
 
-$messageText.text('You\'re awesome as fuck.');
+$.ajax({
+  url: 'messages.json',
+  type: 'GET',
+  success: function(data) {
+    var messages = JSON.parse(data);
+    var index = Math.floor(Math.random() * (messages.length - 1));
+    $messageText.text(messages[index].content);
+
+  },
+  error: function(jqXHR, error) {
+    console.log('Error...');
+  }
+});
