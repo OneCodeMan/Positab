@@ -1,6 +1,6 @@
 /*
 TODO: Draw an icon
-TODO: Hundreds of positive messages
+TODO: 200 positive messages
 TODO: Add to Chrome store
 */
 
