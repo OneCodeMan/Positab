@@ -1,0 +1,20 @@
+.container-fluid {
+  min-height: 100%;
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+.message-div {
+  margin-top: 270px;
+  min-height: 200px;
+  max-height: 450px;
+  overflow: hidden;
+}
+
+#message {
+  color: #FFF4E9;
+  font-size: 60px;
+}
