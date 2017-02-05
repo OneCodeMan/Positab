@@ -1,9 +1,6 @@
 /*
-TODO: More positivity. Fucking positivity overflow. Fuck all negativity.
 TODO: Draw an icon
 TODO: Hundreds of positive messages
-TODO: Shit ton of colors
-TODO: Switch up typeface
 TODO: Add to Chrome store
 */
 
@@ -24,8 +21,12 @@ function shuffle(array) {
 var $messageText = $('#message');
 var $containerFluid = $('.container-fluid');
 var randBg = colors[Math.floor(Math.random() * (colors.length - 1))];
+var randTypeface = typefaces[Math.floor(Math.random() * (typefaces.length - 1))];
 
-$containerFluid.css('background-color', randBg);
+$containerFluid.css({
+  'background-color': randBg,
+  'font-family': randTypeface
+});
 
 $.ajax({
   url: 'messages.json',
@@ -35,6 +36,8 @@ $.ajax({
     var messages = shuffle(messagesRaw);
     var index = Math.floor(Math.random() * (messages.length - 1));
     $messageText.text(messages[index].content);
+    //$messageText.text("The sun is unimpaired even in the midst of obstacles. Clouds cut it off from our vision sometimes, but it sticks to its work and goes on its course.");
+    console.log(messages.length);
 
   },
   error: function(jqXHR, error) {

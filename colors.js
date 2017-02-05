@@ -13,6 +13,6 @@ var colors = ['#A07178', '#C8CC92', '#4C6663', '#F2BAC9', '#603140', '#957964',
               '#91F5AD', '#B96D40', '#8A89C0', '#7A9B76', '#5A2328', '#8A7E72',
               '#00A1E4', '#DC0073', '#89FC00', '#AAFFE5', '#989C94', '#E6E49F',
               '#DA627D', '#9BC4BC', '#7A9CC6', '#CC3363', '#9AD1D4', '#B592A0',
-              '#AAFAC8', '#9799CA', '#84DCC6', '#5F5AA2'];
+              '#AAFAC8', '#9799CA', '#84DCC6', '#5F5AA2', '#FF6663', '#C89F9C'];
 
-  var typefaces = [''];
+  var typefaces = ['Acme', 'Cardo', 'Francois One', 'Hammersmith One', 'Patua One'];
