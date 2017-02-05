@@ -10,11 +10,15 @@ html, body {
 .message-div {
   margin-top: 270px;
   min-height: 200px;
-  max-height: 450px;
-  overflow: hidden;
 }
 
 #message {
   color: #FFF4E9;
   font-size: 70px;
+}
+
+@media screen and (max-width: 500px) {
+  #message {
+    font-size: 50px;
+  }
 }
