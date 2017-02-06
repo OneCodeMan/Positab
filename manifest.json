@@ -3,7 +3,7 @@
 
   "name": "Positab",
   "description": "This extension delivers positivity with every new tab.",
-  "version": "1.3",
+  "version": "1.3.1",
 
   "browser_action": {
     "default_icon": "positab-img.png",

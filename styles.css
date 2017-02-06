@@ -19,7 +19,7 @@ html, body {
   margin-top: 210px;
   min-height: 200px;
   max-height: 500px;
-  overflow: hidden;
+  overflow-y: scroll;
   letter-spacing: 2px;
 }
 
